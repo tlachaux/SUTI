@@ -1,6 +1,5 @@
 /*
  * Simple Unit Test Interface
- * example.cpp
  * t.lachaux
  */
 
@@ -14,7 +13,7 @@ SUTI
         "<test case description 1>",
 
         SUTI_ASSERT("Perform addition", 2 + 2, 4)
-        SUTI_ASSERT("Perform substraction", 2 * 3, 5)
+        SUTI_ASSERT("Perform substraction", 2 - 3, 5)
     )
 
     SUTI_TEST
