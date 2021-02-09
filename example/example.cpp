@@ -12,8 +12,11 @@ SUTI
     (
         "<test case description 1>",
 
-        SUTI_ASSERT("Perform addition", 2 + 2, 4)
-        SUTI_ASSERT("Perform substraction", 2 - 3, 5)
+        int a = 2 + 2;
+        int b = 2 - 3;
+        
+        SUTI_ASSERT("Perform addition", a, 4)
+        SUTI_ASSERT("Perform substraction", b, 5)
     )
 
     SUTI_TEST
