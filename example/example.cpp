@@ -8,23 +8,33 @@
 
 SUTI
 (
+    "PROJECT X",
 
     SUTI_TEST
     (
-        "<test case description 1>",
+        "Example 1",
 
-        SUTI_ASSERT("Perform addition", 2 + 2, 4)
-        SUTI_ASSERT("Perform substraction", 2 * 3, 5)
+        int a = 2 + 2;
+        int b = 2 - 3;
+        int c = 2 * 2;
+        int d = 2 / 3;
+
+        SUTI_EQUAL("Perform addition"       , a, 4)
+        SUTI_EQUAL("Perform substraction"   , b, 5)
+        SUTI_EQUAL("Perform multiplication" , c, 4)
+        SUTI_EQUAL("Perform division"       , d, 5)
     )
 
     SUTI_TEST
     (
-        "<test case description 2>",
+        "Example 2",
 
-        // int * buffer = nullptr;
+        int * buffer = nullptr;
+
         // buffer[10] = 2;
 
-        SUTI_NO_CRASH
+        SUTI_EQUAL("Verify buffer value"    , buffer, nullptr)
+        SUTI_CRASH("Allocation error")
     )
 
 )
