@@ -1,6 +1,5 @@
 /*
  * Simple Unit Test Interface
- * example.cpp
  * t.lachaux
  */
 
